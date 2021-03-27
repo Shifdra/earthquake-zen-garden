@@ -1,14 +1,16 @@
 <template>
   <div>
-    <h3>{{ title }}</h3>
+    <h3 class="my-4">{{ title }}</h3>
     <div class="custom-container">
-      <div class="row">
+      <div class="row my-1">
         <div class="col-6">Title</div>
         <div class="col-2">Magnitude</div>
         <div class="col-4">Time</div>
       </div>
       <div v-for="item in features" :key="item.id" class="row">
-        <div class="col-6 text-start">{{ item.properties.place }}</div>
+        <div class="col-6 text-start">
+          <a href="">{{ item.properties.place }}</a>
+        </div>
         <div class="col-2">{{ item.properties.mag }}</div>
         <div class="col-4">{{ formatTime(item.properties.time) }}</div>
       </div>
