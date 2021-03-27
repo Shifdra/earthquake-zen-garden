@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Home :data="data.data" />
+    <Home :title="data.data.metadata.title" :features="data.data.features" />
   </div>
 </template>
 
