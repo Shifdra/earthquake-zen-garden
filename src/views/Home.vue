@@ -35,9 +35,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.custom-container {
-  margin: auto;
-  max-width: 600px;
-}
-</style>
+<style scoped></style>

@@ -1,43 +1,45 @@
 <template>
   <div>
     <h3 class="my-4">Profile</h3>
-    <div class="custom-container">
+    <div class="custom-container text-start">
       <div class="row my-1">
-        <div class="col-6">Title</div>
-        <div class="col-2">Magnitude</div>
-        <div class="col-4">Time</div>
-      </div>
-      <div v-for="item in data.data.features" :key="item.id" class="row">
-        <div class="col-6 text-start">
-          <a href="">{{ item.properties.place }}</a>
+        <div class="col-4">
+          <img :src="data.profile.avatarImage" alt="avatar" class="img-fluid" />
         </div>
-        <div class="col-2">{{ item.properties.mag }}</div>
-        <div class="col-4">{{ formatTime(item.properties.time) }}</div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-3 fw-bold">First name</div>
+            <div class="col-9">{{ data.profile.firstName }}</div>
+          </div>
+          <div class="row">
+            <div class="col-3 fw-bold">Last name</div>
+            <div class="col-9">{{ data.profile.lastName }}</div>
+          </div>
+          <div class="row">
+            <div class="col-3 fw-bold">Phone</div>
+            <div class="col-9">{{ data.profile.phone }}</div>
+          </div>
+          <div class="row">
+            <div class="col-3 fw-bold">Email</div>
+            <div class="col-9">{{ data.profile.email }}</div>
+          </div>
+          <div class="row">
+            <div class="col-3 fw-bold">Bio</div>
+            <div class="col-9">{{ data.profile.bio }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import moment from "moment";
-
 export default {
   name: "Profile",
   props: {
     data: Object,
   },
-  methods: {
-    formatTime: function(timestamp) {
-      let d = moment(timestamp).format("lll");
-      return d;
-    },
-  },
 };
 </script>
 
-<style scoped>
-.custom-container {
-  margin: auto;
-  max-width: 600px;
-}
-</style>
+<style scoped></style>
