@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="my-4">Profile</h3>
+    <h5 class="my-3">Profile</h5>
     <div class="custom-container text-start">
       <div class="row my-1">
         <div class="col-4">
@@ -42,4 +42,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h5 {
+  font-weight: bold;
+}
+
+.custom-container {
+  max-width: 620px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="my-4">{{ properties.title }}</h3>
+    <h5 class="my-3">{{ properties.title }}</h5>
     <div class="custom-container text-start">
       <div class="row">
         <div class="col-3 fw-bold">Title</div>
@@ -54,7 +54,11 @@ export default {
 </script>
 
 <style scoped>
+h5 {
+  font-weight: bold;
+}
+
 .custom-container {
-  max-width: 470px;
+  max-width: 400px;
 }
 </style>

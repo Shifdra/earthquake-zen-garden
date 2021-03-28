@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="my-4">{{ data.data.metadata.title }}</h3>
+    <h5 class="my-3">{{ data.data.metadata.title }}</h5>
     <div class="custom-container">
       <div class="row my-1">
         <div class="col-6 fw-bold">Title</div>
@@ -41,4 +41,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h5 {
+  font-weight: bold;
+}
+
+.custom-container {
+  max-width: 550px;
+}
+</style>

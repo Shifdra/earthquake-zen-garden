@@ -5,7 +5,7 @@
         <img :src="logoUrl" alt="home" class="d-inline-block align-text-top" />
       </router-link>
 
-      <h1>{{ title }}</h1>
+      <h2>{{ title }}</h2>
 
       <router-link to="profile">
         Welcome Sally
@@ -25,6 +25,11 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  color: #777777;
+  font-weight: bold;
+}
+
 img {
   height: 4rem;
 }
