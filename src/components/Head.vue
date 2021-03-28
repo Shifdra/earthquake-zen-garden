@@ -1,11 +1,15 @@
 <template>
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
+      <router-link to="/">
         <img :src="logoUrl" alt="home" class="d-inline-block align-text-top" />
-      </a>
+      </router-link>
+
       <h1>{{ title }}</h1>
-      <a href="#">Welcome Sally</a>
+
+      <router-link to="profile">
+        Welcome Sally
+      </router-link>
     </div>
   </nav>
 </template>

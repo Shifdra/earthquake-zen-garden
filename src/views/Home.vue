@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h3 class="my-4">{{ title }}</h3>
+    <h3 class="my-4">{{ data.data.metadata.title }}</h3>
     <div class="custom-container">
       <div class="row my-1">
         <div class="col-6">Title</div>
         <div class="col-2">Magnitude</div>
         <div class="col-4">Time</div>
       </div>
-      <div v-for="item in features" :key="item.id" class="row">
+      <div v-for="item in data.data.features" :key="item.id" class="row">
         <div class="col-6 text-start">
           <a href="">{{ item.properties.place }}</a>
         </div>
@@ -24,8 +24,7 @@ import moment from "moment";
 export default {
   name: "Home",
   props: {
-    title: String,
-    features: Array,
+    data: Object,
   },
   methods: {
     formatTime: function(timestamp) {
