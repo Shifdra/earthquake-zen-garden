@@ -7,23 +7,23 @@
           <img :src="data.profile.avatarImage" alt="avatar" class="img-fluid" />
         </div>
         <div class="col-8">
-          <div class="row">
+          <div class="row mb-1">
             <div class="col-3 fw-bold">First name</div>
             <div class="col-9">{{ data.profile.firstName }}</div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col-3 fw-bold">Last name</div>
             <div class="col-9">{{ data.profile.lastName }}</div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col-3 fw-bold">Phone</div>
             <div class="col-9">{{ data.profile.phone }}</div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col-3 fw-bold">Email</div>
             <div class="col-9">{{ data.profile.email }}</div>
           </div>
-          <div class="row">
+          <div class="row mb-1">
             <div class="col-3 fw-bold">Bio</div>
             <div class="col-9">{{ data.profile.bio }}</div>
           </div>

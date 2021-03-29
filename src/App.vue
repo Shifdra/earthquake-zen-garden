@@ -31,10 +31,6 @@ export default {
   color: #444444;
 }
 
-h5 {
-  font-weight: bold;
-}
-
 .custom-container {
   margin: auto;
 }

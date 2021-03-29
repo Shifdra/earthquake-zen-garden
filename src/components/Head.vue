@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light">
     <div class="container-fluid">
       <router-link to="/">
         <img :src="logoUrl" alt="home" class="d-inline-block align-text-top" />
@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+.navbar-light {
+  background-color: #ededed;
+}
+
 h2 {
   color: #777777;
   font-weight: bold;
